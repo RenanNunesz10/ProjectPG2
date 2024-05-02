@@ -19,7 +19,7 @@ public class PaisController {
     Iterable<Pais> listarPaises() {
         return paisRepository.findAll();
     }
-git
+    
     @GetMapping("/paises/{id}")
     ResponseEntity<Pais> buscarPais(@PathVariable Long id) {
         Optional<Pais> pais = paisRepository.findById(id);
