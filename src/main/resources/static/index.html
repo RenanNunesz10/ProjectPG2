@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto PG2</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div id="div-form">
+        <h1>PROJETO PG2</h1>
+        <button id="btn-cidade">CIDADE</button>
+        <button id="btn-pais">PAÍS</button>
+        <button id="btn-time">TIME</button>
+
+        <div id="cidade" class="content">
+            <h2>CIDADE</h2>
+            <button onclick="listarCidades()" id="btn-adicionar">Listar Cidades</button>
+            <br><br>
+            <form id="cidade-form" onsubmit="adicionarCidade(event)">
+                <input type="text" id="cidade-id" placeholder="ID (para atualizar/deletar)"><br>
+                <label for="cidade-nome">NOME:</label>
+                <input type="text" id="cidade-nome"><br>
+                <label for="cidade-estado">ESTADO:</label>
+                <input type="text" id="cidade-estado"><br>
+                <label for="cidade-pais">PAÍS:</label>
+                <input type="text" id="cidade-pais"><br>
+                <label for="cidade-populacao">POPULAÇÃO:</label>
+                <input type="number" id="cidade-populacao"><br>
+                <button type="submit" id="btn-adicionar">Adicionar Cidade</button>
+                <button type="button" onclick="atualizarCidade()" id="btn-adicionar">Atualizar Cidade</button>
+                <button type="button" onclick="deletarCidade()" id="btn-adicionar">Deletar Cidade</button>
+            </form>
+            <div id="cidade-list"></div>
+        </div>
+
+        <div id="pais" class="content">
+            <h2>PAÍS</h2>
+            <button onclick="listarPaises()" id="btn-adicionar">Listar Paises</button>
+            <br><br>
+            <form id="pais-form" onsubmit="adicionarPais(event)">
+                <input type="text" id="pais-id" placeholder="ID (para atualizar/deletar)"><br>
+                <label for="pais-nome">NOME:</label>
+                <input type="text" id="pais-nome"><br>
+                <label for="pais-continente">CONTINENTE:</label>
+                <input type="text" id="pais-continente"><br>
+                <label for="pais-populacao">POPULAÇÃO:</label>
+                <input type="number" id="pais-populacao"><br>
+                <button type="submit" id="btn-adicionar">Adicionar País</button>
+                <button type="button" onclick="atualizarPais()" id="btn-adicionar">Atualizar País</button>
+                <button type="button" onclick="deletarPais()" id="btn-adicionar">Deletar País</button>
+            </form>
+            <div id="pais-list"></div>
+        </div>
+
+        <div id="time" class="content">
+            <h2>TIME</h2>
+            <button onclick="listarTimes()" id="btn-adicionar">Listar Times</button>
+            <br><br>
+            <form id="time-form" onsubmit="adicionarTime(event)">
+                <input type="text" id="time-id" placeholder="ID (para atualizar/deletar)"><br><br>
+                <label for="time-nome">NOME:</label><br>
+                <input type="text" id="time-nome"><br><br>
+                <label for="time-anoFundacao">ANO DE FUNDAÇÃO:</label><br>
+                <input type="number" id="time-anoFundacao"><br><br>
+                <label for="time-cidade">CIDADE:</label><br>
+                <input type="text" id="time-cidade"><br><br>
+                <label for="time-estado">ESTADO:</label><br>
+                <input type="text" id="time-estado"><br><br>
+                <button type="submit" id="btn-adicionar">Adicionar Time</button>
+                <button type="button" onclick="atualizarTime()" id="btn-adicionar">Atualizar Time</button>
+                <button type="button" onclick="deletarTime()" id="btn-adicionar">Deletar Time</button>
+            </form>
+            <div id="time-list"></div>
+        </div>
+    </div>
+
+    <script src="app.js" ></script>
+</body>
+</html>
