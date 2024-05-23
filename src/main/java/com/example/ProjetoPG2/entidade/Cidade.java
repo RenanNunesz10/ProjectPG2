@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="cidade")
+@Table(name="cidades")
 public class Cidade {
     @Id @GeneratedValue
     private Long id;
