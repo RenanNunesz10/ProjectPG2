@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto PG2</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Projeto PS2</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css" />
 </head>
 <body>
     <div id="div-form">
-        <h1>PROJETO PG2</h1>
+        <h1>PROJETO PS2</h1>
         <button id="btn-cidade">CIDADE</button>
         <button id="btn-pais">PAÍS</button>
         <button id="btn-time">TIME</button>
@@ -58,15 +58,15 @@
             <button onclick="listarTimes()" id="btn-adicionar">Listar Times</button>
             <br><br>
             <form id="time-form" onsubmit="adicionarTime(event)">
-                <input type="text" id="time-id" placeholder="ID (para atualizar/deletar)"><br><br>
-                <label for="time-nome">NOME:</label><br>
-                <input type="text" id="time-nome"><br><br>
-                <label for="time-anoFundacao">ANO DE FUNDAÇÃO:</label><br>
-                <input type="number" id="time-anoFundacao"><br><br>
-                <label for="time-cidade">CIDADE:</label><br>
-                <input type="text" id="time-cidade"><br><br>
-                <label for="time-estado">ESTADO:</label><br>
-                <input type="text" id="time-estado"><br><br>
+                <input type="text" id="time-id" placeholder="ID (para atualizar/deletar)"><br>
+                <label for="time-nome">NOME:</label>
+                <input type="text" id="time-nome"><br>
+                <label for="time-anoFundacao">ANO DE FUNDAÇÃO:</label>
+                <input type="number" id="time-anoFundacao"><br>
+                <label for="time-cidade">CIDADE:</label>
+                <input type="text" id="time-cidade"><br>
+                <label for="time-estado">ESTADO:</label>
+                <input type="text" id="time-estado"><br>
                 <button type="submit" id="btn-adicionar">Adicionar Time</button>
                 <button type="button" onclick="atualizarTime()" id="btn-adicionar">Atualizar Time</button>
                 <button type="button" onclick="deletarTime()" id="btn-adicionar">Deletar Time</button>
